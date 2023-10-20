@@ -11,11 +11,15 @@ const sumAll = function(begin, end) {
         smallNum = begin;
     }
 
-    for (i = smallNum; i <= largeNum; i++) {
-        totalSum += i;
-    }
+    if (begin < 0 || end < 0 || begin === typeof(!Number) || end === typeof(!Number)) {
+        return "ERROR"
+    } else {
+        for (i = smallNum; i <= largeNum; i++) {
+            totalSum += i;
+        }
 
-    return totalSum;
+        return totalSum;
+    }
 
 };
 
