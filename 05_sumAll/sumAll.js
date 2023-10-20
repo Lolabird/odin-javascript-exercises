@@ -3,17 +3,17 @@ const sumAll = function(begin, end) {
     let largeNum = 0;
     let smallNum = 0;
 
-    if (begin > end) {
-        largeNum = begin;
-        smallNum = end;
-    } else {
-        largeNum = end;
-        smallNum = begin;
-    }
-
-    if (begin < 0 || end < 0 || begin === typeof(!Number) || end === typeof(!Number)) {
+    if (begin < 0 || end < 0 || typeof(begin) !== "number" || typeof(end) !== "number") {
         return "ERROR"
     } else {
+        if (begin > end) {
+            largeNum = begin;
+            smallNum = end;
+        } else {
+            largeNum = end;
+            smallNum = begin;
+        }
+
         for (i = smallNum; i <= largeNum; i++) {
             totalSum += i;
         }
