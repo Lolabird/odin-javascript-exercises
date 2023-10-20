@@ -1,6 +1,6 @@
 const reverseString = function(oldStr) {
-    newStr = '';
-    strLength = oldStr.length;
+    let newStr = '';
+    let strLength = oldStr.length;
 
     for (i = 0; i < strLength; i++) {
         newStr = oldStr.slice(i, i+1) + newStr;

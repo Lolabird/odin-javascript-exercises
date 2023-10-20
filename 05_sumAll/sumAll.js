@@ -1,5 +1,7 @@
 const sumAll = function(begin, end) {
-    totalSum = 0;
+    let totalSum = 0;
+    let largeNum = 0;
+    let smallNum = 0;
 
     for (i = begin; i <= end; i++) {
         totalSum += i;
