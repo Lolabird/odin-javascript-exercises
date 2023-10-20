@@ -3,7 +3,15 @@ const sumAll = function(begin, end) {
     let largeNum = 0;
     let smallNum = 0;
 
-    for (i = begin; i <= end; i++) {
+    if (begin > end) {
+        largeNum = begin;
+        smallNum = end;
+    } else {
+        largeNum = end;
+        smallNum = begin;
+    }
+
+    for (i = smallNum; i <= largeNum; i++) {
         totalSum += i;
     }
 
