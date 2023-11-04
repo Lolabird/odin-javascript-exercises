@@ -1,3 +1,6 @@
+# Lolabird's Note
+Get the original exercises [here](https://github.com/TheOdinProject/javascript-exercises). They do updates all the time so what currently exists here, does not necessarily reflect the current state of these exercises. Also, if you're going through the Odin Project, currently, please try the exercises yourself before taking a look at mine. Otherwise Enjoy!
+
 # JavaScript Exercises
 
 These JavaScript exercises are intended to complement the JavaScript content on The Odin Project (TOP). They should only be done when instructed during the course of the curriculum.
