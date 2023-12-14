@@ -2,8 +2,8 @@ const palindromes = function (str) {
     revStr = "";
     pal = false;
 
-    for (let char in str) {
-        revStr = str[char] + revStr;
+    for (let char of str) {
+        revStr = char + revStr;
     }
 
     if (str == revStr) {
