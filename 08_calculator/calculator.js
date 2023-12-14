@@ -9,7 +9,7 @@ const subtract = function(a, b) {
 const sum = function(array) {
   let arraySum = 0;
   
-  for (i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     arraySum += array[i];
   }
 
@@ -19,7 +19,7 @@ const sum = function(array) {
 const multiply = function(array) {
   let arrayProd = 1;
   
-  for (i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     arrayProd *= array[i];
   }
 
@@ -31,7 +31,13 @@ const power = function(a, b) {
 };
 
 const factorial = function(a) {
-	return factorial(a);
+  let factProd = 1; 
+
+  for (let i = a; i > 1; i--) {
+    factProd *= i;
+  }
+
+	return factProd;
 };
 
 // Do not edit below this line
